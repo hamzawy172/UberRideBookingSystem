@@ -105,6 +105,10 @@ namespace UberRideBookingSystem.Migrations
                     b.Property<int>("ReiderId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("DriverId");

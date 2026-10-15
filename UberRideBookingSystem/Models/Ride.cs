@@ -12,6 +12,8 @@ namespace UberRideBookingSystem.Models
         public string DropOffLocation { get; set; }
         [Required , Range(20,5000)]
         public decimal Fare { get; set; }
+        [Required]
+        public string Status { get; set; }
 
         [Required]
         [ForeignKey(nameof(UserRider))]
